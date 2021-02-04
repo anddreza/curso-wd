@@ -10,7 +10,7 @@ body{
    margin: 0;
    background-position: right center;
    background-size: cover;
-   
+   border-top: 1px solid transparent; 
 }
 
 .titulo-frente{
@@ -21,9 +21,46 @@ body{
 }
 
 .titulo-frente h1{
-    text-transform: uppercase;
+    text-transform: uppercase; /*deixar maior a fonte*/
     font-size: 46px;
     text-shadow: 3px 3px 5px black; /* 1 valor é o X, 2 valor é o Y, 3 quanto a sombra é esfumaçada*/
+}
+
+.titulo-frente p{
+    background-color: rgba(0,0,0, .8);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+
+}
+
+.hero nav li{
+    display: inline-block; /* deixar um ao lado do outro*/
+    list-style: none;
+    margin-left: 10px; /*separar os blocos*/
+    border: 1px solid white;
+
+}
+
+.hero nav ul{
+    text-align: right;
+    margin: 20px 50px 0 0;
+}
+.hero nav a{
+    /*background: #000000;
+    background: rgb();*/
+    background: rgba(0,0,0, 0.3);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+}
+.hero nav a:hover{
+    background: rgba(0,0,0, 0.5); /* quando passar o mouse em cima ficar mais opaco*/
 }
 
 main{
@@ -36,8 +73,32 @@ main{
     background-color: white;
     padding: 15px;
     margin-top: 15px;  
+    overflow: auto;
 }
 
+.card{
+    width: 32%;
+    /*display: inline-block;*/
+    float: left;
+   /* border: 2px solid blue;*/
+    box-sizing: border-box; /*aula 10 falamos disso*/
+    /*margin-left: 0; * no vídeo está 1%*/
+}
+
+.card-1, .card-2{
+    margin-right: 2%;
+}
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card p{
+    background: #343535;
+    color: white;
+    margin: 0;
+    padding: 15px;
+}
 .rodape{
     height: 80px; /*height e line-height tem que ter o mesmo valor*/;
     text-align: center;
