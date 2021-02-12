@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .formLogin{
+            width: 250px;
+            margin: 50px auto 0;
+            font-family: sans-serif;
+        }
+        .formLogin fieldset{
+            background: #ccc;
+        }
+        .formLogin legend{
+            background: #ccc;
+            display: inline-block;
+            padding: 10px;
+        }
+        .formLogin label{
+            margin-top: 15px;
+            display: block; /* não estava aplicando até aplciar o display*/
+            margin-bottom: 5px;
+        }
+
+        #user, #pass, .btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box; /* todas as linhas ficarem bem alinhadas*/
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+        }
+
+        #user:focus, #pass:focus{ /*muda a cor quando coloca o mouse em cima*/
+            background: white;
+
+        }
+        .btn{
+            margin-top: 15px;
+        }
+        #user{
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" method="post" class="formLogin">
+    <fieldset>
+        <legend>Login</legend> 
+        <label for="user">User:</label> 
+        <input type="text" name="text" id="user" autofocus> <!--name alinhar com o backend--><!--autofocus é quando voce já abre a página e tem um barra lá esperando para escrever-->
+        <label for="pass">Password:</label> 
+        <input type="password" name="pass" id="pass">
+    
+        <input type="submit" value="login" class="btn">
+    </fieldset>
+    </form>
+</body>
+</html>
