@@ -19,7 +19,7 @@
 </head>
 <body>
     <header class="main-header">
-        <a href="index.html" class="mmain-header-link">
+        <a href="index.html" class="main-header-link imagem-link">
           <img src="imagens/avatar.jpg" alt="TEXTO">  
         </a>
         <h1 class="main-header-title">
@@ -37,56 +37,62 @@
 
     <section class="main-content-section">
         <h3>Recents Work</h3>
-        <article class="recent-works-card">
-            <a href="imagens/fulls/01.jpg">
-                <img src="imagens/thumbs/01.jpg" alt="Carro em rua sem movimento">   
-            </a>  
-        <p class="recent-work-card-tittle">Magna sed consequat tempus.</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
-        </article>
+
+        <div class="row">
+            <div class="col-2">
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="imagens/fulls/01.jpg">
+                            <img src="imagens/thumbs/01.jpg" alt="Carro em rua sem movimento">   
+                        </a>  
+                    <p class="recent-work-card-tittle">Magna sed consequat tempus.</p>
+                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
+                    </article>
 
 
-        <article class="recent-works-card">
-            <a href="imagens/fulls/02.jpg">
-                <img src="imagens/thumbs/02.jpg" alt="Caminhar">   
-            </a>  
-        <p class="recent-work-card-tittle">Ultricies lacinia interdum</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
-        </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link"  href="imagens/fulls/02.jpg">
+                            <img src="imagens/thumbs/02.jpg" alt="Caminhar">   
+                        </a>  
+                    <p class="recent-work-card-tittle">Ultricies lacinia interdum</p>
+                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
+                    </article>
 
 
-        <article class="recent-works-card">
-            <a href="imagens/fulls/03.jpg">
-                <img src="imagens/thumbs/03.jpg" alt="Floresta">   
-            </a>  
-        <p class="recent-work-card-tittle">Tortor metus commodo</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
-        </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="imagens/fulls/03.jpg">
+                            <img src="imagens/thumbs/03.jpg" alt="Floresta">   
+                        </a>  
+                    <p class="recent-work-card-tittle">Tortor metus commodo</p>
+                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
+                    </article>
 
-        <article class="recent-works-card">
-            <a href="imagens/fulls/04.jpg">
-                <img src="imagens/thumbs/04.jpg" alt="Montanhas">   
-            </a>  
-        <p class="recent-work-card-tittle">Quam neque phasellus</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
-        </article>
+                </div>
+            <div class="col-2">
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="imagens/fulls/04.jpg">
+                            <img src="imagens/thumbs/04.jpg" alt="Montanhas">   
+                        </a>  
+                    <p class="recent-work-card-tittle">Quam neque phasellus</p>
+                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
+                    </article>
 
-        <article class="recent-works-card">
-            <a href="imagens/fulls/05.jpg">
-                <img src="imagens/thumbs/05.jpg" alt="Livraria">   
-            </a>  
-        <p class="recent-work-card-tittle">Nunc enim commodo aliquet</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
-        </article>
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="imagens/fulls/05.jpg">
+                            <img src="imagens/thumbs/05.jpg" alt="Livraria">   
+                        </a>  
+                    <p class="recent-work-card-tittle">Nunc enim commodo aliquet</p>
+                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
+                    </article>
 
-        <article class="recent-works-card">
-            <a href="imagens/fulls/06.jpg">
-                <img src="imagens/thumbs/06.jpg" alt="Isolamento">   
-            </a>  
-        <p class="recent-work-card-tittle">Risus ornare lacinia</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
-        </article>
-    
+                    <article class="recent-works-card">
+                        <a class="imagem-link" href="imagens/fulls/06.jpg">
+                            <img src="imagens/thumbs/06.jpg" alt="Isolamento">   
+                        </a>  
+                    <p class="recent-work-card-tittle">Risus ornare lacinia</p>
+                    <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>  
+                    </article>
+            </div>  
+        </div>  <!--row-->
     <a href="#" title="Veja Portfolio Completo" class="button-default">Veja Portfolio completo</a>
     </section>
 
@@ -94,37 +100,46 @@
         <h3> Get in Touch</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque temporibus vel reprehenderit enim molestiae velit laudantium ad eveniet qui, consequatur doloremque sapiente doloribus, similique officiis necessitatibus, expedita facilis dolorum iure!</p>
 
-        <form action="#" method="POST">
 
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
+    <div class="row">
+        <div class="col-2-3">
+            <form action="#" method="POST">
+                <div class="row">
+                    <div class="col-2">
+                <label for="nome">Nome</label>
+                <input placegolder="Nome completo" type="text" name="nome" id="nome">
+            </div>
+            <div class="col-2">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            </div>
+                <label for="mensagem">Mensagem</label>
+                <textarea type="mensagem" id="mensagem"></textarea>
+    
+                <input type="submit" value="Enviar" class="button-default button-default-stroke button-default-big">
+            </form> 
+   </div>
+    <div class="col-1-3">
+        <adress>
+            <p>
+                <span>Endereço</span>
+                Rua XX, n XX, bairro XXX
+                Manaus-AM, BR.
+            </p>
+            <p>
+                <span>Telefone</span>
+                092 XXXXX-XXXXX
+            </p>
+            <p>
+                <span>Email</span>
+                XXXXX@XXXX.COM
+            </p>
+        </adress>
+    </div> 
+    </div>   
 
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
-            
-            <label for="mensagem">Mensagem</label>
-            <textarea type="mensagem" id="mensagem"></textarea>
-
-            <input type="submit" value="Enviar">
-
-            <adress>
-                <p>
-                    <span>Endereço</span>
-                    Rua XX, n XX, bairro XXX
-                    Manaus-AM, BR.
-                </p>
-
-                <p>
-                    <span>Telefone</span>
-                    092 XXXXX-XXXXX
-                </p>
-
-                <p>
-                    <span>Email</span>
-                    XXXXX@XXXX.COM
-                </p>
-            </adress>
-        </form> 
+       
     </section>
 
     <section class="main-content-section">
@@ -349,8 +364,8 @@
     <label for="msg">Mensagem</label>
     <textarea placeholder="digite uma mensagem" id="msg"></textarea>
 
-    <input type="submit" class="button-default" value="enviar">
-    <input type="reset" class="button-default-stroke" value="limpar">
+    <input type="submit" class="button-default button-default-big" value="enviar">
+    <input type="reset" class="button-default button-default-stroke button-default-big" value="limpar">
 </section>
 
 <section>
@@ -360,12 +375,15 @@
     </div>
 
     <div class="gallery-thumb">
-        <img src="imagens/thumbs/01.jpg">
-        <img src="imagens/thumbs/02.jpg">
-        <img src="imagens/thumbs/03.jpg">
-        <img src="imagens/thumbs/04.jpg">
-        <img src="imagens/thumbs/05.jpg">
-        <img src="imagens/thumbs/06.jpg">
+        <img class="col-1-3" src="imagens/thumbs/01.jpg">
+        <img class="col-1-3" src="imagens/thumbs/02.jpg">
+        <img class="col-1-3" src="imagens/thumbs/03.jpg">
+        <img class="col-1-3" src="imagens/thumbs/04.jpg">
+        <img class="col-1-3" src="imagens/thumbs/05.jpg">
+        <img class="col-1-3" src="imagens/thumbs/06.jpg">
+        <img class="col-1-3" src="imagens/thumbs/03.jpg">
+        <img class="col-1-3" src="imagens/thumbs/01.jpg">
+        <img class="col-1-3" src="imagens/thumbs/01.jpg">
     </div>
 
     <h4>Left &amp; Right</h4>
