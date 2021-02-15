@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+body{
+    font-family: 'Merriweather', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: #666;
+  /*  font-weight: normal;*/
+  line-height: 2;
+}
+
+a{
+  transition: color .2s linear, border .2s linear; /*quando passar o mouse por cima*/
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  color: #49bf9d;
+}
+
+a:hover{
+  border-bottom-color: transparent ;
+}
+p{
+  margin: 0 0 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0; /*1 em é a proporção de 1 do tamanho dessa fonte e sempre relativo ao font-size*/
+}
+
+h1{
+  font-size: 36px;
+
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 26px;
+}
+h4{
+  font-size: 22px;
+}
+h5{
+  font-size: 18px;
+}
+h6{
+  font-size: 15px;
+}
+sub, sup{
+  font-size: 12px;
+}
+
+blockquote{
+  border-left: 5px solid #efefef;
+  margin: 2em 0;
+  padding: .5em 0 .5em 1.5em;
+}
+
+code{
+  background: #f7f7f7;
+  border-radius: .35em;
+  border: 2px solid #efefef;
+  font-size: .9em;
+  padding: 0.25em 0.65em;
+  font-family: "courier new", monospace;
+  color: #929292;  
+}
+
+pre code{
+  display: block;
+}
+
+ul, ol{
+  margin: 0;
+  padding: 0;
+  /*list-style: none;*/
+  /*list-style-position: inside;*/
+  padding-left: 1.1em;
+}
+
+li{
+  padding-left: .5em;
+  
+}
+
+.ul-alternate{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ul-alternate li{
+  border-bottom: 2px solid #ccc;
+  padding-left: 0;
+}
+
+.ul-alternate li:last-child{
+  border: 0; /* pegar a última li e colocar 0, nesse caso a linha saiu da última li*/
+
+}
+
+.ul-icons{
+  list-style-type: none;
+  padding-left: 0;
+   
+}
+
+.ul-icons i{
+  display:inline-block;
+  font-size: 1em;
+  color: #49bf9d;
+
+}
+
+.button-default{
+  background-color: #49bf9d;
+  border: 2px solid #49bf9d;
+  color: white;
+  padding: .75em 1.5em;
+  border-radius: 5px;
+  font-size: .8em;
+  display: inline-block;
+}
+
+.button-default-stroke{
+  background-color: white;
+  border-color: #efefef;
+  color: inherit;
+}
+
+.button-default-small{
+  font-size: .65em;
+}
+
+.button-default-full{
+  display: block;
+  text-align: center;
+}
+
+.table{
+ width: 100%;
+ margin: 0 0 2em 0;
+ border-collapse: collapse; 
+ text-align: left;
+}
+
+.table td{
+  padding: .75em;
+
+}
+
+.table th{
+  background: #ccc;
+  padding: .75em;
+}
+.table tbody tr td{
+  border-bottom: 1px solid #ccc;
+}
+.table tbody tr:first-child td{
+  border-top: 2px solid #666;
+}
+
+.table tbody tr:last-child td{
+  border-bottom: 2px solid #666;
+}
+
+.main-header{
+  position: fixed; /*posição trabalha com top e left*/
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 35%;
+  /*background: orange;*/
+  padding: 124px 54px 72px;
+  box-sizing: border-box; /*afastamento do texto de rolar do texto fixo*/
+  background-image: url(imagens/overlay.png), url(imagens/bg.jpg);
+  background-position: left top; /*posição de imagem, sem fazer muita diferença*/
+  background-size: auto, cover; /*posição da imagem no browse*/
+  text-align: right;
+}
+
+.main-header-title{
+  font-size: 22px;
+  line-height: 1.5;
+  color: white;
+  color: rgba(255, 255, 255, .5);
+  font-weight: normal;
+}
+
+.main-header-title strong{
+  color: white;
+  font-weight: normal;
+}
+
+.main-header-link{
+  color: inherit;
+}
+
+.main-header-link:hover{
+  color: #49bf9d;
+}
+
+.main-content{
+  width: 65%; /*fazendo referencia ao width do main-header*/
+  margin-left: 35%;
+  padding: 124px 54px 72px;
+  box-sizing: border-box;
+}
+
+.row{
+  overflow: auto;
+}
+
+.col-2{
+  width: 50%;
+  float: left;
+}
