@@ -140,13 +140,19 @@ textarea{
 
 .button-default{
   background-color: #49bf9d;
-  border: 2px solid #49bf9d;
+  border: 3px solid #49bf9d;
   color: white;
   padding: .75em 1.5em;
   border-radius: 5px;
   font-size: .8em;
   display: inline-block;
   width: auto;
+  transition: all .5s;
+  cursor: pointer; /*mudar quando tiver o mouse em cima*/
+}
+.button-default:hover{
+  background-color: #5ddeb9;
+  border-color: transparent;
 }
 
 .button-default-stroke{
@@ -154,6 +160,12 @@ textarea{
   border-color: #efefef;
   color: inherit;
 }
+.button-default-stroke:hover{
+  color: #49bf9d;
+  border-color: #49bf9d;
+  background-color: white;
+}
+
 .button-default-big{
   font-size: 1em;
 }
@@ -254,6 +266,17 @@ textarea{
   border-radius: 50%; /*avatar ficou redondo*/
   overflow: hidden; /*não vai fazer diferença aqui*/
 }
+.main-footer{
+  position: fixed;
+  bottom: 0;
+  width: 35%;
+  left: 0;
+  padding: 0 54px 72px 0;
+  box-sizing: border-box;
+  text-align: right;
+  list-style: none;
+  height: ;
+}
 /* Grid */
 .gallery-img{
 
@@ -283,7 +306,7 @@ textarea{
   margin-left: 1.5%;
 }
 .col-2-3{
-  width: 65%;
+  width: 66%;
   float: left;
 }
 
@@ -293,7 +316,18 @@ textarea{
   float: left;
 }
 
-.col-1-3:nth-child(3n - 1){ /*2,5,8*/
+.col-1-3:nth-child(3n-2){ /*1, 4, 7*/
    /*2n só os numeros pares, 3n-1 a cada multiplo de 3 menos 1 */
-  margin: 0 2%;
+  margin-right: 2%;
+}
+.col-1-3:nth-child(3n){ /*3, 6, 9*/
+  margin-left: 2%;
+}
+.col-2-3 + .col-1-3{
+  margin-left: 2%;
+
+}
+.col-1-3 + .col-2-3, .col-1-3 + .col-2-3{
+  margin-left: 2%;
+  
 }
